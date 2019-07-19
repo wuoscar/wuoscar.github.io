@@ -1,0 +1,11 @@
+sidebar_title: "吴思乱想"
+sidebar_subtitle: "尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。"
+
+truncate_len: 200
+
+rss: atom.xml
+
+# Choose the comment service according to your need.
+# Please do not use the two services at the same time.
+livere: # [data-uid] for livere.com
+disqus: # [short_name] for disqus.com
