@@ -1,0 +1,242 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title> - 吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="
+title: 附录——1. 为什么要投资区块链数字资产date: 2019-07-22 11:02:45
+tags: 李笑来 定投——大佬的自我修养理论上，定投策略可以用来投资很多标的。在未来的十年中，有个过去并未受到广泛重视的一种标的就是区块链数字资产。
+先说比特币。比特币是地球上第一个应用区块链技术的数字资产，这一点毋庸置疑。过去的十年之中，比特币饱受争议。每一轮的价格上涨下跌，都会反...">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?63261390">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://wuoscar.github.io">
+                Home
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper-text-only" style="background-image: url('')">
+                <div class="post-title">
+                    
+                    <div class="post-meta">
+                        <time datetime="2019-07-22T03:00:16.295Z" itemprop="datePublished">
+                            2019-07-22 11:00
+                        </time>&nbsp;
+                        
+    
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <hr>
+<p>title: 附录——1. 为什么要投资区块链数字资产<br>date: 2019-07-22 11:02:45</p>
+<h2 id="tags-李笑来-定投——大佬的自我修养"><a href="#tags-李笑来-定投——大佬的自我修养" class="headerlink" title="tags: 李笑来 定投——大佬的自我修养"></a>tags: 李笑来 定投——大佬的自我修养</h2><p>理论上，定投策略可以用来投资很多标的。在未来的十年中，有个过去并未受到广泛重视的一种标的就是区块链数字资产。</p>
+<p>先说比特币。比特币是地球上第一个应用区块链技术的数字资产，这一点毋庸置疑。过去的十年之中，比特币饱受争议。每一轮的价格上涨下跌，都会反复被宣告死亡 —— 迄今为止比特币已经至少被宣布死亡 364 次。大家可以记住这个网址，它上面记录着能够收集到的历史上比特币被死亡的历次言论。</p>
+<blockquote>
+<p><a href="https://99bitcoins.com/bitcoin-obituaries/" target="_blank" rel="noopener">https://99bitcoins.com/bitcoin-obituaries/</a></p>
+</blockquote>
+<p>很多人喜欢搬弄新词汇，会一脸专家地告诉你，现在比特币已经获得共识…… 诸如此类吧。关于比特币的技术细节，我需要用另外专门的课堂去讲解。但，在这里可以说清楚的一点是，在区块链技术中，“共识”（Concensus）这个词，指的是机器与机器之间使用算法实现的共识，而不是人与人之间的共识。</p>
+<p>人与人之间，没有标准沟通协议，几乎没办法产生有效共识。倒也不是没有，各色人等之间的唯一共识，我能想到的就是赚钱，除此之外，没啥共识。所以，以后不要乱显摆专用术语，容易露馅哈。</p>
+<p>比特币之所以厉害，根本不是因为什么 “价格共识”，那因为什么呢？为了说明这个重点，我不得不杜撰一个词汇出来，叫做 “<strong>皆难否</strong>”。什么叫 “皆难否” 呢？就是不管你接受不接受，关键在于所有人都难以否认。这就叫皆难否。</p>
+<p>所以，厉害的并不是“人们都接受”，而是“<strong>皆难否</strong>” —— 就是无论是谁都无法否认的事实。比特币这种东西之所以厉害，不是因为有一天它会被所有人接受，相信我，那是不可能的。美元厉害吧？你在北京夜市吃大排档，用美元支付试试看？绝大多数情况下不会被接受的。但，没有人会否认真美元的价值。</p>
+<p>现在的比特币已经到了这个地步，就是无论怎样，涨也罢，跌也罢，反正“皆难否”。比特币诞生的十年后的今天，区块链技术的价值，同样早就拥有了皆难否的属性。而基于区块链技术的数字资产，其增值趋势，同样是皆难否的 —— 投资区块链数字资产的最重要理由莫过如此。</p>
+<p>八年前，我开始投资比特币的理由很简单：</p>
+<blockquote>
+<p>我们已经见识过互联网是如何通过大幅度降低信息流通成本（降低至几近于零）改变这个世界的；如果现在有个东西能够大幅度降低资产流动成本（降低至几近于零），那么这世界必然因此发生巨大变化 —— 至于是多大的变化干脆想象不出来，正如三十年前我们没办法想象互联网是像今天这样改变世界的一样。所以，如果当年投资互联网是正确的，那么我去投资区块链也是对的，之前那是“信息互联网”，现在这可是“金融互联网”。</p>
+</blockquote>
+<p>八年后的今天，比特币已经不再是当年的 “<strong>社会实验</strong>”，早就是一场 “<strong>社会实践</strong>” 了。而持续发展的趋势，不仅皆难否，更为重要的是，这个趋势跑道很长很长。</p>
+<p>比特币这个东西，按照它白皮书的规划，要挖到 2140 年…… 十年前，看到这样的计划，以为是天方夜谭。但，现在十年已经过去，比特币不再是 “实验”，而是 “实践”，那么，这个跑道还有 120 年呢！基本上超过所有今天听众的生命极限。也因此，我认为我根本不可能找到更长的跑道了。</p>
+<p>然而，更为重要的是，十年后的今天，可投资的区块链数字资产标的不止一个了。当年我入场的时候，只有一个标的，就是比特币。其后的几年里，虽然有成千上万的山寨币出现，包括今天依然活跃的莱特币，但在我眼里靠谱的只有一个，就是比特币。</p>
+<p>只有一个投资标的的时候，有一件事情是解决不了的：<strong>无法稀释机会成本。</strong></p>
+<p>现在不一样了，现在有很多靠谱投资标的，那么，我们就有办法通过投资一系列标的完成这个重要的投资策略：稀释机会成本。这是很重要的投资策略，只可惜绝大多数所谓的投资人完全不具备这种基础概念。</p>
+<p>这也是为什么我要设计并推出一揽子标的解决方案 <a href="https://b.watch" target="_blank" rel="noopener">BOX</a> 的原因。在已有的传统金融市场上，这种一揽子投资标的，被称为 ETF，Exchangable Trading Fund。这个概念没办法顾名思义，但，可以通过 ETF 的基本属性去了解它：</p>
+<blockquote>
+<ul>
+<li>把一系列标的锁定在一个篮子中；</li>
+<li>配有一个市场上可交易的 Token 锚定这个篮子的价值；</li>
+<li>在一定的条件下，Token 持有者可以通过缴回 Token 赎回该篮子中对应的标的。</li>
+</ul>
+</blockquote>
+<p> <a href="https://b.watch" target="_blank" rel="noopener">BOX</a>就是这样的一个 ETF。</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/2019/07/22/Z-Appendix.02/">
+        Previous post<br>
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2019/07/22/Finale/">
+        Next post<br>
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?58431923"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title> - 吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="
+title: 5. 为什么只有很少的人使用定投这么神奇的策略date: 2019-07-22 11:02:45
+tags:读到这里的时候，你必然会越来越好奇，甚至干脆是狐疑：
+
+定投策略既然这么神奇，甚至是普通人摆脱阶层固化的唯一靠谱通路，怎么最终采用这个策略的人那么少呢？！
+
+我们先看一个显而易见的事实：
+
+在中国，绝大多数的家庭都在拼死拼活地定投！
+
+其实，放眼全世界，可能都差不多……...">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?20428282">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://wuoscar.github.io">
+                Home
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper-text-only" style="background-image: url('')">
+                <div class="post-title">
+                    
+                    <div class="post-meta">
+                        <time datetime="2019-07-22T03:00:16.264Z" itemprop="datePublished">
+                            2019-07-22 11:00
+                        </time>&nbsp;
+                        
+    
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <hr>
+<p>title: 5. 为什么只有很少的人使用定投这么神奇的策略<br>date: 2019-07-22 11:02:45</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>读到这里的时候，你必然会越来越好奇，甚至干脆是狐疑：</p>
+<blockquote>
+<p>定投策略既然这么神奇，甚至是普通人摆脱阶层固化的唯一靠谱通路，怎么最终采用这个策略的人那么少呢？！</p>
+</blockquote>
+<p>我们先看一个显而易见的事实：</p>
+<blockquote>
+<p>在中国，绝大多数的家庭都在拼死拼活地定投！</p>
+</blockquote>
+<p>其实，放眼全世界，可能都差不多…… 只不过，这绝大多数的人，定投的标的是房产。这说明什么？这说明事实上几乎所有人都有定投的能力。</p>
+<p>非常遗憾的是，全世界人民都被银行忽悠透了 —— 人们在从银行贷款支付巨额利息的前提下，用他们生命中最具生产力的一段时间，即，长达二三十年的时间里，定投房产，过着蜗牛般的一生。</p>
+<p>这绝大多数人中的绝大多数，自称或者被称为 “房奴” —— 即便是在经济环境大好的时代，贷款买房也不是什么美好的经历。本质上来看，他们不是房子的奴隶，他们是银行的奴隶。本质说出来就很可怕，这些房奴从来没认真审视过一个真相：</p>
+<blockquote>
+<p>他们实际上是在一生最具生产力的时间里，用两套房产的钱，买到了一套房产 —— 房贷在二三十年间的利息总和总是和房产价值差不多一致，这是银行的精算师们提前努力演算的结果。</p>
+</blockquote>
+<p>不比是不气人的。</p>
+<p>你和你的同学，两个人，在 18 年前，做出了不一样的选择，你选择贷款买房 —— 定投房产；而你的同学选择定投茅台股票 —— 因为是他就是个笨蛋所以只能免费使用市场上最聪明的人的免费建议…… 18 年后的今天，你们俩对比一下是怎样的呢？</p>
+<p>假设当初你买的是北京的房产，北京的房产价格上涨是这些年全国最强的，年化复合增长大约 18% 左右，四舍五入之后，大约相当于在过去的 18 年里你的房产价值增长了 20 倍！看起来真的很惊人！但，事实上并没有这么乐观。因为你是需要支付利息的，所以，相当于你是用两倍的价格购买的房产，所以，你能占据的增长应该是 10 倍而不是 20 倍。还有，这才 18 年，贷款总计 30 年，头几年你算是还清了本金，可现在至少还有一半的利息没有还完，也就是说，这 10 倍里你实际上真正拥有的只不过是它的 3/4，即，7.5 倍…… 这还是你在房价起飞之前入场时机非常好的情况下！那些 2018 年才开始定投房产的人，放眼望到 2036 年，谁也不敢保证还能有这样高的收益了吧？</p>
+<p>那你的同学呢？他手里的茅台股票在过去的 18 年里增长了 180 倍！这相当于年化复合增长是 33.45%！而你这位笨蛋同学并不是当初最低价一把梭的，而是在这些年里逐步定投的，那么，他的增长不会有 180 倍那么多，但也绝对是实实在在的 40 倍左右……</p>
+<p>这个比较结果看起来有点过分了吧？其实还有更绝望的呢，说出来能气死你：</p>
+<blockquote>
+<ul>
+<li>你的房产，的确算作是资产，可其流动性趋近于零；</li>
+<li>你的同学的股票，同样算作是资产，可其流动性却几乎是 100%……</li>
+</ul>
+</blockquote>
+<p><strong>对资产来说，流动性是决定性因素。</strong>如果没有流动性的话，无论多有价值的资产，都和面对敌人的时候你的手枪里虽然确实有子弹但那子弹却被卡在弹夹里就是射不出来差不多…… 这就是为什么说，你那位笨蛋同学的收益是实实在在的 40 倍的原因，因为他手中资产的流动性太好了！</p>
+<p>虽然这个比较实在是令人生气，这种比较很可能并不存在，因为更大的概率是，你的笨蛋同学压根就不大可能去定投茅台股票 —— 事实上，在过去的 18 年里一直定投茅台股票的人，真的屈指可数。这样的惨案，很难发生在你的身边……</p>
+<p>为什么呢？因为<strong>定投实际上是一个社会化行为，甚至是社交化行为。</strong></p>
+<p>你的笨蛋朋友不会有令你生气绝望的未来，极大概率上来看，他的命运其实应该和你差不多，因为你们都是社交动物，你们都在同一个社会里生存，都受到强大的社会化影响…… 你看，你要结婚，他也要结婚，是不？你为什么要买房子啊？那不是你的主意，那是你丈母娘的主意，因为如果你没有买房的话，你的丈母娘就不放心把女儿嫁给你！你以为你那笨蛋同学的丈母娘不一样吗？十有八九的概率在这方面她们是一模一样的，这个社会里大多数的母亲都无法安心地把女儿嫁给一个连房都买不起的男人…… 这也不怪她们，关键在于大家都这样啊！</p>
+<p>于是，北上广深这种大城市里，最常见的是那种千万负翁 —— 他们算算自己的资产，包括房产，怎么也有个千万级别，可是，他们的兜比脸干净，很少有钞票可供他们花销，并且还有一大笔银行利息每月要还。若是他们有了孩子就更惨，若是他们的房产是刻意选择的学区房就惨上加惨，虽然从资产上看肯定不算是穷人，但全家几口挤在十几二十几平方米的蜗居里苦中作乐地生活着。</p>
+<p>定投这个策略，包括以下几个要点：</p>
+<blockquote>
+<ul>
+<li>标的究竟是什么？</li>
+<li>长期究竟是多久？</li>
+<li>定期究竟是多长的间隔？</li>
+<li>每次投入至少多少金额？</li>
+<li>出现意外的时候怎么办？</li>
+</ul>
+</blockquote>
+<p>定投房产，有着巨大的社会化动力去驱动 —— 标的几乎不用多想；长期早已经被银行的精算师算好，而不知不觉就开始定投的人们也从来不关心这事儿，因为反正在他们看来所有人都是从银行贷款，人人都分期，一般都是分期三十年；间隔多久一次的定期也是银行定好的每个月；投入金额反向倒过来算就是了，房子好一点，就金额高一点，房子差一点，金额就低一点；至于出现意外的时候怎么办？唉，人生总是充满意外的，到时候再说罢！事实上也确实是如此，到真的出了意外的时候，就算再去借钱，也要把房贷还上……</p>
+<p>定投交易市场上的标的就不一样了。社会化的共识基本上就是：</p>
+<blockquote>
+<ul>
+<li>“那根本不靠谱吧？”</li>
+<li>“风险多大啊！”</li>
+<li>“感觉太不实在了！”</li>
+<li>“咱也干脆弄不懂啊！” </li>
+</ul>
+</blockquote>
+<p>甚至更惊悚的是：</p>
+<blockquote>
+<ul>
+<li>“难道你不知道吗？那谁谁就是炒股亏了…… 都跳楼了！”</li>
+</ul>
+</blockquote>
+<p>对于绝大多数人来说，投资股市，就必然是投机，听说投机没有一个有好下场的，就这样！至于定投是什么，为什么定投，如何定投，绝大多数人根本不知道，因为身边就不可能有已然成功的案例具备说服力。</p>
+<p>在这种强大的现实社会化影响之下，选择定投策略去投资股票或者证券的人只能是极少数极少数。</p>
+<p>在互联网不断改变世界的过程中，这种定投者曾经注定的孤独，有可能得到极大的解脱。定投社区的产生和发展解决了这个问题。</p>
+<p>从众心理在绝大多数情况下被认为不是什么好事儿，但，在少数情况下，从众心理也有巨大的好处。这就好像你在家里是很难坚持锻炼的，所以，你宁肯付年费，也宁肯付很高的教练费，甚至宁肯路程很远也要去健身房去锻炼一样。这就好像其实所有的学习都可以独自完成，但在一个成员优秀的班级或者寝室里就不由自主地更勤奋、更努力，甚至自然而然地更优秀一样。</p>
+<p><strong>参与定投社区一定是最优策略。</strong>如果你想要定投 <a href="https://b.watch" target="_blank" rel="noopener">BOX</a>，那你就要去参与 <a href="https://b.watch" target="_blank" rel="noopener">b.watch</a> 社区。如果你想要投资美股，或者投资港股，那你就想办法到网上去寻找相应的优质垂直社区。为什么呢？因为在外面，你是异类，你说什么都很难被理解，因为即便是同样的东西，同样的情况，对方都可能持有截然相反的意见或者感受；不被理解倒罢了，你甚至可能被鄙视 —— 这不是吃上了最没必要的暗亏吗？被傻逼痛骂傻逼的情况，你认真感受一下？</p>
+<p>在定投社区里就不一样了，你不定投才是异类 —— 这就是为什么很多优质社区里其实静悄悄的重要原因，别的都不重要，重要的是知道自己有同类，自己有同道，自己并不孤独。</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/2019/07/22/CHAPTER.06/">
+        Previous post<br>
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2019/07/22/CHAPTER.04/">
+        Next post<br>
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?61078098"></script>
+
+
+
+</body>
+</html>

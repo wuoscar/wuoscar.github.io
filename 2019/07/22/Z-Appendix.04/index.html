@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title> - 吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="
+title: 附录——4. 关于笑来定投课堂date: 2019-07-22 11:02:45
+tags: 李笑来 定投——大佬的自我修养笑来定投课堂，是李笑来的区块链教育产品。
+在区块链世界里生存了八年之后，李笑来这根八年的老韭菜，有很强烈的欲望把自己的生存经验和智慧传播出去 —— 相信你能理解。
+只不过，你没想到的是，李笑来更想做的，是在传播靠谱投资知识的同时，陪很多普通人一起身体力行...">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?8619713">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://wuoscar.github.io">
+                Home
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper-text-only" style="background-image: url('')">
+                <div class="post-title">
+                    
+                    <div class="post-meta">
+                        <time datetime="2019-07-22T03:00:16.301Z" itemprop="datePublished">
+                            2019-07-22 11:00
+                        </time>&nbsp;
+                        
+    
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <hr>
+<p>title: 附录——4. 关于笑来定投课堂<br>date: 2019-07-22 11:02:45</p>
+<h2 id="tags-李笑来-定投——大佬的自我修养"><a href="#tags-李笑来-定投——大佬的自我修养" class="headerlink" title="tags: 李笑来 定投——大佬的自我修养"></a>tags: 李笑来 定投——大佬的自我修养</h2><p><strong>笑来定投课堂</strong>，是李笑来的区块链教育产品。</p>
+<p>在区块链世界里生存了八年之后，李笑来这根八年的老韭菜，有很强烈的欲望把自己的生存经验和智慧传播出去 —— 相信你能理解。</p>
+<p>只不过，你没想到的是，李笑来更想做的，是在传播靠谱投资知识的同时，陪很多普通人一起身体力行地赚到钱 —— 历史上鲜有机会可以像笑来定投课堂这样，通过知识传递带着学员赚到钱…… 幸运的是，区块链行业的突起和迅猛发展，给了我们这样独一无二的，甚至可以说是前无古人后无来者的机会。</p>
+<p>笑来定投课堂除了是李笑来自己知识变现的场所，更重要地，笑来定投课堂是所有学员的 “<strong>场外赚钱通道</strong>”。李笑来负责制造超值内容，而学员呢？除了学习、吸收与践行之外，只要他们愿意，他们还可以通过销售笑来定投课堂而赚到比特币 —— 对，不仅是赚到钱，还是赚到比特币，因为笑来定投课堂只接受比特币支付。</p>
+<p>除了销售笑来定投课堂赚比特币之外，那些能够完成自己定制的定投计划的人，即，真正在践行在笑来定投课堂习得的投资知识的人，有个额外的福利：</p>
+<blockquote>
+<ul>
+<li>有资格获得 <a href="https://b.watch" target="_blank" rel="noopener">b.watch</a> 这个地球上第一个链上区块链 ETF 交易所的股份，不仅与 <a href="https://b.watch" target="_blank" rel="noopener">BOX</a> 共同成长，还能与 <a href="https://b.watch" target="_blank" rel="noopener">b.watch</a> 共同成长。</li>
+</ul>
+</blockquote>
+<p>总而言之，笑来定投课堂就是学员跟李笑来共同成长的地方 —— <strong>少废话、多赚钱，这很实在。</strong></p>
+<p>于此同时，我自己也定投 <a href="https://b.watch" target="_blank" rel="noopener">BOX</a>，长期持有 <a href="https://b.watch" target="_blank" rel="noopener">BOX</a> —— 这叫<strong>以身作则</strong>。定投是普通人唯一靠谱的投资策略，但，它总是说起来容易做起来难 —— 没做过的人、没做成的人，甚至都没办法知道它究竟难在哪里。而且，最为关键的是，有同道相互陪伴非常重要 —— 没有人忍受得了太久的孤独。</p>
+<p>笑来定投课堂的不同之处在于，讲课的人，李笑来，过去的十多年里都坚持一个基本的原则：</p>
+<blockquote>
+<p><strong>永远只说已经做到的事情。</strong></p>
+</blockquote>
+<p>而 <a href="https://b.watch" target="_blank" rel="noopener">BOX</a> 也是李笑来做到之后才说、做到之后继续改进的产品。不是仅靠拍脑门就开始做的事情。</p>
+<p>笑来定投课堂是李笑来向大家分享投资理念的地方。不要以为知识与认知是可以零成本简单传递的 —— 还是那句话：</p>
+<blockquote>
+<p>知道、学到、想到，都没用 —— 尤其是在投资这种以跨越阶层为目标的行动中。</p>
+<p>到最后，<strong>只有做到才算数。</strong></p>
+</blockquote>
+<p>所以，知识与认知，只有在践行中才会发挥价值。然而，践行本身，又需要知识与认知指导。</p>
+<p>投资教育很重要。别说投资了，就连最基本的赚钱，都是父母干脆不会，学校从来不教，只能靠自己蹒跚摸索的本事。并且，整个社会都在这方面给每一代人乱洗脑。</p>
+<p>很多人整天鹦鹉学舌地说什么视金钱如粪土，什么千金散去还复来，真是没文化啊。李白那个臭傻逼是吃软饭的！取了个官二代老婆之后就把老婆扔在家里拿着老丈人的钱出去快活，花完了就回去呆两天，再要一笔出去浪…… 这傻逼当然视金钱如粪土了，这傻逼当然觉得千金散去还复来了！—— 可那钱是他赚来的吗？他会赚钱吗？人渣。</p>
+<p>投资是很严肃的技能。不夸张地讲，哪怕投机，都可能是更难的技能，玩不好就自杀了…… 去年的某教授，今年的某高材生，不都是没玩明白只好一死了事儿吗？</p>
+<p><strong>赚钱不丢人，赚不到干净钱才丢人。</strong></p>
+<p>所以，在我看来，认真学习投资对每个人来说是必须的，实在想不出什么理由不去认真学习投资。</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/2019/07/22/CHAPTER.01/">
+        Previous post<br>1. 投资是普通人摆脱阶层固化的唯一靠谱方式
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2019/07/22/Z-Appendix.03/">
+        Next post<br>
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?30642482"></script>
+
+
+
+</body>
+</html>

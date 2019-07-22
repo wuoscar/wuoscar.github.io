@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="A Blog Powered By Hexo">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?51201164">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item active" href="http://wuoscar.github.io">
+                Home
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                Archive
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            Archive
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+        
+        <div class="pagination-indicator">
+            <span style="text-align: center">
+                2<br><div style="display: inline-block; transform: rotate(-28deg)">-</div><br>3
+            </span>
+        </div>
+        
+
+        
+        <a class="pagination-action" href="/">
+            <i class="material-icons pagination-action-icon">
+                chevron_left
+            </i>
+        </a>
+        
+
+        
+        <a class="pagination-action" href="/page/3/">
+            <i class="material-icons pagination-action-icon">
+                chevron_right
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-no-background">
+        
+        <a href="/2019/07/22/CHAPTER.12/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 12. 你作为一个普通人你究竟有什么样的极端优势date: 2019-07-22 11:02:45
+tags: 李笑来 定投——大佬的自我修养再说一遍：
+
+定投绝对可行，毫无水分，并且全靠你自己。这里所说的普通人，不分国界、不分地域、不分种族、不分性别、不分年龄、不分高矮胖瘦美丑、不分何种性取向…… 关键在于，甚至压根不分智商和学历！
+
+当我反复说这段话的时候，是在提醒你一个...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.11/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 11. 既然是个有理想的人就绝对不要沦为半吊子date: 2019-07-22 11:02:45
+tags: 李笑来 定投——大佬的自我修养进入交易市场之后，你会遇到形形色色的人 —— 当然，其中绝大多数都不是你的同类，定投的你就是属于极少数。很快，你就会发现，你遇到的绝大多数人都是半吊子。当然，你已经知道了，跟你闪烁其词去中心化的肯定是半吊子，跟你夸夸其谈共识的肯定是半吊子...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.10/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 10. 在镜像世界里作为普通人的你如何总是能选择对的那一个date: 2019-07-22 11:02:45
+tags: 李笑来 定投——大佬的自我修养有的时候，的确存在 “决胜一瞬间” 的时刻。当你进入交易市场，选择了定投策略的那一瞬间，你实际上已经彻底赢了，并且还是很简单地赢了 —— 接下来在所有的节点上，你身处镜像世界里正确的那一个。就这么简单。当你决定自学的时候，只要...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.09.7/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 9.7 在主动的边界内你还有多少空间date: 2019-07-22 11:02:45
+tags:之前提到，“凡是对你产生重大影响的，都不是你所能控制的”。你现在知道了，你之所以无法控制那些对你产生重大影响的因素，是因为他们在你的主动边界之外。
+然而，你知道吗？在你的主动边界之内，有很多你原本可以控制的被你直接放弃了…… 并且那程度有多可怕，只不过是你从来没有认真想过，只不过...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.09.6/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 9.6 顺应趋势的被动力量究竟有多么强大date: 2019-07-22 11:02:45
+tags:先从反面举一个例子。我们平时所说的教育，就是能够展示被动的负面力量的绝佳例子。
+你别看一代又一代的人在抱怨教育的失败 —— 不仅抱怨自己的教育失败，还抱怨整个社会的教育失败，不仅中国如此，全世界范围内都在一次又一次地反思他们所谓的教育 —— 可如果你肯换个角度，就会发现惊奇莫...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.09.5/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 9.5 为什么定投是“主动地被动”最佳践行策略date: 2019-07-22 11:02:45
+tags:我是硬核鸡汤作者，我向所有人无差别地分享我的思考，我的决策，我的收获 —— 不讲我的失败。为什么？失败了，就是没做好、没做到，失败的经验不叫经验，那顶多算作教训，可是，基本上还是没什么用！你什么时候见过学渣父母通过总结自己的经验教训把自己的孩子培养成了学霸？
+我只讲我做...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.09.4/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 9.4 驾驭趋势的最优策略只能是主动地被动date: 2019-07-22 11:02:45
+tags:主动当然很重要 —— 在主动的边界之内。然而，被绝大多数人所忽略的另外一个事实是：
+
+被动竟然更重要！
+
+主动的重要性，往往一点就破；被动的重要性却很难讲清楚，因为要事先沟通好 “主动的边界” 这个很多人从未认真思考过的概念。
+一旦当我们开始研究趋势的时候，就会体会到被动的...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.09.3/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 9.3 决定命运的因素常常在主动边界之外date: 2019-07-22 11:02:45
+tags:这绝对是个值得注意的现象：
+
+凡是对你产生重大影响的，都不是你所能控制的……
+
+换言之，这是更普遍的现象 —— 决定性因素基本上都在你的主动边界之外。
+
+有很多例子。
+比如，英国有个斯诺克球手，罗尼·安东尼奥·奥沙利文，1975 年出生。此人长得很帅，又由于他球技惊人所以显得...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.09.2/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 9.2. 大多数主动的人竟然不知道边界date: 2019-07-22 11:02:45
+tags:让我们从一对看起来是对立的概念说起：
+
+主动与被动
+
+一般来说，主动与被动被认为是反义词。“主动” 通常被理解为积极的、正面的，而相对地，“被动” 常常被理解为消极的、负面的。
+### 
+随着你开始在意你的主动人格，随着你不断塑造呵护你的主动人格，你就会感受到，主动的人太少太少...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2019/07/22/CHAPTER.09.1/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            
+                        </div>
+                        <div class="post-item-summary">
+                            
+title: 9.1. 培养自己的主动人格date: 2019-07-22 11:02:45
+tags:让我们从一对看起来是对立的概念说起：
+
+主动与被动
+
+一般来说，主动与被动被认为是反义词。“主动” 通常被理解为积极的、正面的，而相对地，“被动” 常常被理解为消极的、负面的。
+在很多情况下，一个人是被动的，而非主动的，确实不是什么好事儿。进而，自命不凡的你，必须主动培养塑造呵护自己的主...
+                        </div>
+                        <div class="post-item-meta">
+                            2019-07-22
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+    
+        
+<div class="pagination index-page">
+    
+    <a class="pagination-action" href="/" style="opacity: 1">
+        
+            <i class="material-icons pagination-action-icon">
+                chevron_left
+            </i>
+        </a>
+
+        <div class="pagination-indicator">
+            <span>2/3</span>
+        </div>
+
+        
+        <a class="pagination-action" href="/page/3/" style="opacity: 1">
+            
+                <i class="material-icons pagination-action-icon">
+                    chevron_right
+                </i>
+            </a>
+</div>
+
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2019 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?98765853"></script>
+</body>
+</html>
