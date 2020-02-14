@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="A Blog Powered By Hexo">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?94304763">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item active" href="http://wuoscar.github.io">
+                ホーム
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                記事一覧
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            記事一覧
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+        
+        <div class="pagination-indicator">
+            <span style="text-align: center">
+                7<br><div style="display: inline-block; transform: rotate(-28deg)">-</div><br>7
+            </span>
+        </div>
+        
+
+        
+        <a class="pagination-action" href="/page/6/">
+            <i class="material-icons pagination-action-icon">
+                chevron_left
+            </i>
+        </a>
+        
+
+        
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-no-background">
+        
+        <a href="/2016/12/04/2016.12.04孩子教育--少点套路，多点真诚/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.12.04孩子教育--少点套路，多点真诚
+                        </div>
+                        <div class="post-item-summary">
+                            今天给雨彤检查完作业后，发现她有很大进步，能够自觉的对已经做完的作业检查一遍，作业中的低级错误越来越少了。最近批改的作业都是全对的。很欣慰，这次的教育方式终于有效果了。以下是几点思考和心得:1.对孩子的教育，更多的应该是进行一种习惯教育，培养她从小做人做事的一些行为习惯准则。很多家长教育孩子犯错误时，总是给孩子讲一些大道理，根本不拿出具体的改正措施和建议。纵使我们大人懂那么多道理，都不一定能...
+                        </div>
+                        <div class="post-item-meta">
+                            2016-12-04
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2016/11/27/2016.11.27梦境复原/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.11.27梦境复原
+                        </div>
+                        <div class="post-item-summary">
+                            在梦境里，思想总是被束缚住的，行为判断时会莫名其妙的屏蔽掉一些现实生活中可行的因素。再或者这只是对现实生活中的一些事件进行了抽象与夸张，侧重点放在了某一个典型因素上，既潜意识中对该事件的定位标签。  例如，昨晚我梦境中出现了在开车这一事件，开车时只要一遇到行人或者其他车辆的堵塞，就会马上熄火，继续前进时必须重新打火启动。而现实生活中可以同时踩住刹车和离合停下来的，不用熄火。这样看，似乎潜意识...
+                        </div>
+                        <div class="post-item-meta">
+                            2016-11-27
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2016/11/23/2016.11.23/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.11.23
+                        </div>
+                        <div class="post-item-summary">
+                            1.不要用手脚的勤快掩盖思想上懒惰！总监在做经理的事，经理在做员工的事，员工在谈论国家大事。2.今天发现淘宝联盟是个兼职赚钱很不错的工具，同时购物也可以省一部分钱，可以好好学习一下，挖掘如何运用起来赚钱。  ● 做和系个人店铺，上传淘宝客商品，赚取佣金。  ● 和系目前依然几乎没有自营商家，几乎都是淘宝代发，而且价格都虚高，存在很大的竞争空间，利用淘宝客的优势，打价格战，同时铺开商品品类。3...
+                        </div>
+                        <div class="post-item-meta">
+                            2016-11-23
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2016/10/31/2016.10.31/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.10.31
+                        </div>
+                        <div class="post-item-summary">
+                            1.周末做了卤菜，火锅辣卤，味道还不错，但有需要改进的地方。  ● 把佐料渣过滤装在布袋里，使卤水和料分离，便于捞卤菜。  ● 菜和肉同时卤最好用漏斗分开。可以试着卖一下了，在线下或者网上。2.工作安排表，以表格形式按推进的时间梳理会容易得多，时期、具体时间、任务、负责人、主要职责、备注，这样展开来写，很更具体有效，同事也可以看看之前校园演讲比赛那个的方案。
+
+                        </div>
+                        <div class="post-item-meta">
+                            2016-10-31
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2016/10/27/2016.10.27 工作的瓶颈/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.10.27 工作的瓶颈
+                        </div>
+                        <div class="post-item-summary">
+                            1.开了一个无趣的会，说了一通进步上进的话，但员工依然不知道该如何去改善，没有找到问题的症结到底在哪里。你不了解的东西，交给另一群也没有经验的人，不是你说上，说要弄好，就能做好的，作为leader自身都是迷茫的，连个方向的没有，你让员工如何做好…2.自己卖创意生活用品，解决生活中存在的需求痛点，推荐智慧生活家居用品，巧妙解决生活中的麻烦事。  ● 通过公众号软文，引流到微店。3.周末尝试做臭...
+                        </div>
+                        <div class="post-item-meta">
+                            2016-10-27
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2016/10/17/20161026/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.10.26 无聊的一天
+                        </div>
+                        <div class="post-item-summary">
+                             无所事事的一天1.装修水电改完了，去温江验收，准备付第二阶段装修款9500；2.玩了一晚上球球大战；3.没有目标，虽然知道现在这样不好，但还是不知道该干什么。想买个车，跑跑优步或者滴滴赚点钱，但是如果为了在业务生活赚点钱，才地摊貌似也可以。  ● 现在有个初步目标了，想办法，利用业务时间赚钱，具体怎么搞，要多思考下了。如果摆地摊就到处去转转，看哪儿摆合适，买点什么，或者可以买小吃，比如臭豆...
+                        </div>
+                        <div class="post-item-meta">
+                            2016-10-17
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2016/10/17/20161017/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.10.17
+                        </div>
+                        <div class="post-item-summary">
+                            1.如果有精力和时间的话，第一次装修还是自己联系工人来装可能会省钱，并且使用起来也会放心一些。但往往第一次都不太懂很多东西，需要很多精力去查询资料，去问有经验的人，但如果自身赚钱能力很强，就大可不必用这种以时间换钱的方式。可以用钱聘请有经验专业的人帮自己处理这些问题，但还是心里有数，了解自己的需求，所以自己懂一点这方面的知识看来也是必须的。2.高峰期乘地铁有感       早晨乘2号线至天府...
+                        </div>
+                        <div class="post-item-meta">
+                            2016-10-17
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2016/10/12/20161012/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2016.10.12
+                        </div>
+                        <div class="post-item-summary">
+                            
+今天新房正式开始动工装修了，去拿了装修许可，给物业交了680多的装修管理和建渣清运费。墙的拆打经过一点周折也确定了300元铲墙和拆打，窗子定了290的铭帝铝材合计要三千多弄完，装修合同款是38000元，目前以确定要支付的费用有690+300+3000+37500＝41490元。
+
+装修的时候钱还真是要精打细算啊，都不是小数目，没项省一点都可以省好几千了，不连家具尽量再4.5万以内搞定。这样...
+                        </div>
+                        <div class="post-item-meta">
+                            2016-10-12
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+    
+        
+<div class="pagination index-page">
+    
+    <a class="pagination-action" href="/page/6/" style="opacity: 1">
+        
+            <i class="material-icons pagination-action-icon">
+                chevron_left
+            </i>
+        </a>
+
+        <div class="pagination-indicator">
+            <span>7/7</span>
+        </div>
+
+        
+            <a class="pagination-action" style="opacity: 0">
+                
+                <i class="material-icons pagination-action-icon">
+                    chevron_right
+                </i>
+            </a>
+</div>
+
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?20519968"></script>
+</body>
+</html>

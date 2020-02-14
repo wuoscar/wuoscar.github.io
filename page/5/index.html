@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="A Blog Powered By Hexo">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?13842481">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item active" href="http://wuoscar.github.io">
+                ホーム
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                記事一覧
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            記事一覧
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+        
+        <div class="pagination-indicator">
+            <span style="text-align: center">
+                5<br><div style="display: inline-block; transform: rotate(-28deg)">-</div><br>7
+            </span>
+        </div>
+        
+
+        
+        <a class="pagination-action" href="/page/4/">
+            <i class="material-icons pagination-action-icon">
+                chevron_left
+            </i>
+        </a>
+        
+
+        
+        <a class="pagination-action" href="/page/6/">
+            <i class="material-icons pagination-action-icon">
+                chevron_right
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-no-background">
+        
+        <a href="/2018/01/08/2018.1.8/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2018.1.8
+                        </div>
+                        <div class="post-item-summary">
+                            对他人的批判不叫道德，对自己行为的反省才是。阮籍，他不是没有道德，而是他不想让道德情操变成一种表演。当道德变成一种表演，就是作假，就会变成各种形态的演出，就会让最没有道德的人变成最有道德的人，语言和行为开始分离。生命的意义，有没有可能生命的意义就是在寻找意义的过程，你以为找到了，却反而失去意义，当你开始寻找时，那个状态才是意义。不管生命的意义为何，如果强把自己的意义加在别人身上。那是非常恐怖...
+                        </div>
+                        <div class="post-item-meta">
+                            2018-01-08
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2018/01/05/2018.1.5/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2018.1.5
+                        </div>
+                        <div class="post-item-summary">
+                            
+设计思路欠缺，缺少相关理论知识，应多多设计相关书籍，写心得体会。
+多总结自身优势，谈话中围绕优势点引导展开，避免被带偏或者说一些无关经验的话题。
+事先想好自己的提问，努力做到有水平能加分。
+表现足够的置信，在被质疑时不应退缩，而应该有礼貌，且有理有据的进行反驳。
+展现自己的能力，而非谦卑。在未感知到你能力前，没人会因为你的谦卑而欣赏你。
+
+
+                        </div>
+                        <div class="post-item-meta">
+                            2018-01-05
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/12/30/2017.12.30 求婚准备/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.12.30 求婚准备
+                        </div>
+                        <div class="post-item-summary">
+                            参与人员：1YYL2XJ3XJ家属4YZH5HXM6HXM家属7HYS8WZQ
+放视频和音乐 CC拍照摄影 菲菲
+ 2018年，我们的爱情长跑在经历了3年之痛，7年之痒后，即将走过第八个年头，你或许一直想问我为什么要让你等待八年，因为这颗心有了这八年间我们的点滴后才会完。10年我们在雅安相恋，11年我们来到成都，相爱一周年;12年我们经历了相爱之痛，我总是以自己的标准要求你，期望改变你，而你...
+                        </div>
+                        <div class="post-item-meta">
+                            2017-12-30
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/12/29/2017.12.29/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.12.29
+                        </div>
+                        <div class="post-item-summary">
+                            管理中，正式与非正式的组织都要考虑，我们学了太多正式的管理方式，不能说它不好，但它的边界是很明显的。
+管理有模式，无定式，讲严谨性，也讲艺术性。因为在这背后，绕不开人性。
+
+                        </div>
+                        <div class="post-item-meta">
+                            2017-12-29
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/12/27/2017.12.27/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.12.27
+                        </div>
+                        <div class="post-item-summary">
+                            新知识点
+
+淘宝达尔文系统、京东开普勒系统、有赞云
+
+网易反垃圾系统、数据监测-talkingdata服务
+
+这个阶段产品比较大，并且产品算是一种业务形态，一个大产品下面会有几个子产品，而这阶段的产品经理会将子产品分配给下属的产品经理负责。也就是说这阶段产品经理拥有的是洞察行业走势、提前布局的能力。以C2C的淘宝进行举例，淘宝的产品线很多，比如像商品产品线、交易产品线、会员业务产品线、垂直业...
+                        </div>
+                        <div class="post-item-meta">
+                            2017-12-27
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/12/01/2017.12.1/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.12.1
+                        </div>
+                        <div class="post-item-summary">
+                            新知识
+
+懒人经济
+共享办公空间品牌“梦想加”
+轻量级AI解决方案服务商“禾思科技”
+
+
+                        </div>
+                        <div class="post-item-meta">
+                            2017-12-01
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/11/30/2017.11.30/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.11.30
+                        </div>
+                        <div class="post-item-summary">
+                            日记  ● 现在的角色感觉由产品经理逐渐转向了项目经理，不仅要做产品规划设计，还要管理开发工作;  ● 项目管理方面的技能还需要多学习;  ● 必须花时间认真思考如何借助小程序创业了，减少娱乐及目的性不强的事物上话费的时间。花太多时间在焦虑与空想之中了，需要聚焦于执行，确定解决问题的具体方式;  ● 今年系统积累，出几套产品相关的标准文档;  ● 每天晚上睡得太晚了，除非在做项目，否则要早睡...
+                        </div>
+                        <div class="post-item-meta">
+                            2017-11-30
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/11/20/2017.11.21/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.11.20
+                        </div>
+                        <div class="post-item-summary">
+                            没有方向你还做啥产品，有方向不确定业务你做啥产品
+从产品角度，我会定期去竞品的产品论坛/贴吧，用户反馈的区域去获取用户的反馈，看看竞品用户对于竞品的反馈，提炼需求、痛点、问题等内容！
+人工智能也是如此，它的核心在于算法，然而算法成熟到一定阶段后，就变成了唾手可得的工具，PM要学会的，就是如何利用这工具去定义需求，实现产品，而不是过多的钻进如何研究算法。从目前来看，人工智能还是较为初级，即使风...
+                        </div>
+                        <div class="post-item-meta">
+                            2017-11-20
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/11/20/2017.11.20/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.11.20
+                        </div>
+                        <div class="post-item-summary">
+                            没有方向你还做啥产品，有方向不确定业务你做啥产品
+从产品角度，我会定期去竞品的产品论坛/贴吧，用户反馈的区域去获取用户的反馈，看看竞品用户对于竞品的反馈，提炼需求、痛点、问题等内容！
+人工智能也是如此，它的核心在于算法，然而算法成熟到一定阶段后，就变成了唾手可得的工具，PM要学会的，就是如何利用这工具去定义需求，实现产品，而不是过多的钻进如何研究算法。从目前来看，人工智能还是较为初级，即使风...
+                        </div>
+                        <div class="post-item-meta">
+                            2017-11-20
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+        <a href="/2017/11/13/2017.11.13/" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-divider">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            2017.11.13
+                        </div>
+                        <div class="post-item-summary">
+                            工作：1.纯电商时代已经过去，未来十年、二十年没有电子商务这一说，只有新零售，也就是说线上线下和物流必须结合在一起，才能诞生真正的新零售。新零售的三大特征：消费者体验为中心、数据驱动为商业、多元场景构成泛零售形态。人-货-场2.物流＋货源众包，
+
+                        </div>
+                        <div class="post-item-meta">
+                            2017-11-13
+                        </div>
+                    </div>
+                    
+                    <div class="post-item-image-wrapper">
+                        <div class="post-item-image" style="background-image: url('/2017/11/13/2017.11.13/1.png')"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </a>
+        
+    
+        
+<div class="pagination index-page">
+    
+    <a class="pagination-action" href="/page/4/" style="opacity: 1">
+        
+            <i class="material-icons pagination-action-icon">
+                chevron_left
+            </i>
+        </a>
+
+        <div class="pagination-indicator">
+            <span>5/7</span>
+        </div>
+
+        
+        <a class="pagination-action" href="/page/6/" style="opacity: 1">
+            
+                <i class="material-icons pagination-action-icon">
+                    chevron_right
+                </i>
+            </a>
+</div>
+
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?19743470"></script>
+</body>
+</html>

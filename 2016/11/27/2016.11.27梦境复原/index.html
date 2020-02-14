@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>2016.11.27梦境复原 - 吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="在梦境里，思想总是被束缚住的，行为判断时会莫名其妙的屏蔽掉一些现实生活中可行的因素。再或者这只是对现实生活中的一些事件进行了抽象与夸张，侧重点放在了某一个典型因素上，既潜意识中对该事件的定位标签。  例如，昨晚我梦境中出现了在开车这一事件，开车时只要一遇到行人或者其他车辆的堵塞，就会马上熄火，继续前进时必须重新打火启动。而现实生活中可以同时踩住刹车和离合停下来的，不用熄火。这样看，似乎潜意识...">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?41917564">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://wuoscar.github.io">
+                ホーム
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                記事一覧
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            記事一覧
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper-text-only" style="background-image: url('')">
+                <div class="post-title">
+                    2016.11.27梦境复原
+                    <div class="post-meta">
+                        <time datetime="2016-11-27T01:48:00.000Z" itemprop="datePublished">
+                            2016-11-27 09:48
+                        </time>&nbsp;
+                        
+    
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <p>在梦境里，思想总是被束缚住的，行为判断时会莫名其妙的屏蔽掉一些现实生活中可行的因素。再或者这只是对现实生活中的一些事件进行了抽象与夸张，侧重点放在了某一个典型因素上，既潜意识中对该事件的定位标签。<br>  例如，昨晚我梦境中出现了在开车这一事件，开车时只要一遇到行人或者其他车辆的堵塞，就会马上熄火，继续前进时必须重新打火启动。而现实生活中可以同时踩住刹车和离合停下来的，不用熄火。这样看，似乎潜意识里把开车抽象定义为了“一旦开始就不能停下来，停下后就必须重新开始”的事件。梦境中一切让车停下的阻碍，都会让我产生愤怒的情绪。因为一看到它们，我就会联想到熄火。这也许和初学开车时，开手动挡的离合和刹车配合不好，在路上暂停和启动时容易熄火的经历有关。但那时的情绪是羞愧和尴尬，紧张和蒙逼，只想马上启动车子开走，不想给后面的车辆造成不便。<br>如今，梦将多年前的经历从潜意识里挖掘出来，并且以当时自己对该经历的记忆标签，进行抽象夸张以限制自己，组织成一个困扰的事件。<br>然而我处理时的状态，是多年后的自己，去面对同样一件困扰的事件。虽然也会因避让行人或者其他车辆停下来感到愤怒，但却不那么紧张和手足无措，因为知道自己这次会娴熟的再继续启动开走。<br>然后为什么会愤怒呢？也许是成了老司机以后的“路怒症”犯了吧，对一切认为是他人原因造成的行驶不畅都感到愤怒…<br>梦境给我还原了多年前经历的困扰，让多年后的我，来处理相同的事件。这个过程正好可以审视自己是否有成长，面对相同的困扰，是否能更从容的面对，是否懂得了更好的处理方式，是否有遗憾可以在梦境中弥补。<br>在梦中，我们会被复盘很多现实生活中的经历。虽然都不再是真实的了，但在梦中，我们的状态是全身心投入的，感受的情绪与感受是和现实中一样真实的。<br>珍惜你的梦吧，现实中的遗憾–<br>那些回不去的过往，让人无比怀念的校园时光，曾经亲密无间，如今已陌路的朋友；<br>那些再也见不到的人，想追还没来得及追的女孩，离开这个世界的亲人；<br>那些想重来一次的机会，想要重新做的选择…<br>这一切存在于你的潜意识中。终将有一天，梦会帮你将他们都复原。<br>好好把握，愿你在梦境中能够不留遗憾，这就够了<br>这并非自欺欺人，现实生活中许多遗憾永远也无法弥补，而内心的情愫是可以在梦境中得以实现的。<br>人的一生，不也只是为了满足一个个情愫而活着吗？</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/2016/12/04/2016.12.04孩子教育--少点套路，多点真诚/">
+        前の記事<br>2016.12.04孩子教育--少点套路，多点真诚
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2016/11/23/2016.11.23/">
+        次の記事<br>2016.11.23
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?32134931"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html lang xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>2018.8.28高手的休息 - 吴思乱想</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="wuoscar">
+<meta name="description" content="
+人生是一场长跑，光努力赢了起跑没用，得悠着点。
+
+
+人体是一个“反脆弱”系统。能恢复过来，就是反脆弱，会变得更强大；恢复不过来，就废了。对于高手来说休息和恢复，有战略性地位。
+
+
+成长 = 压力 + 休息。压力太大休息太少，人会被击垮；压力不够而休息太多，人就会自满而停滞不前。高手会合理分配压力和休息，高效、持续地成长。
+
+
+进行有针对性的、高强度的训练，然后休息和恢复。再重复这个过程，但...">
+<meta name="keywords" content="吴志强,wuoscar,吴思乱想,wuliaoliao,吴了">
+
+<link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml">
+
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?75352899">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="http://wuoscar.github.io">
+                ホーム
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                記事一覧
+            </a>
+
+            
+            
+
+            
+            <a class="a-block drawer-menu-item" href="/atom.xml">
+                RSS
+            </a>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            吴思乱想
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">吴思乱想</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            吴思乱想
+        </div>
+        <div class="nav-subtitle">
+            尚未佩妥剑，<br>转眼便江湖。<br>愿历尽千帆，<br>归来仍少年。
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item" href="http://wuoscar.github.io">
+            Home
+        </a>
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            記事一覧
+        </a>
+
+        
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        powered by Hexo<br>
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+        
+        &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+    </div>
+</div>
+
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper-text-only" style="background-image: url('')">
+                <div class="post-title">
+                    2018.8.28高手的休息
+                    <div class="post-meta">
+                        <time datetime="2018-08-27T16:10:00.000Z" itemprop="datePublished">
+                            2018-08-28 00:10
+                        </time>&nbsp;
+                        
+    
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <ol>
+<li>人生是一场长跑，光努力赢了起跑没用，得悠着点。</li>
+</ol>
+<ol start="2">
+<li>人体是一个“反脆弱”系统。能恢复过来，就是反脆弱，会变得更强大；恢复不过来，就废了。对于高手来说休息和恢复，有战略性地位。</li>
+</ol>
+<ol start="3">
+<li>成长 = 压力 + 休息。压力太大休息太少，人会被击垮；压力不够而休息太多，人就会自满而停滞不前。高手会合理分配压力和休息，高效、持续地成长。</li>
+</ol>
+<ol start="4">
+<li>进行有针对性的、高强度的训练，然后休息和恢复。再重复这个过程，但略微提高强度，能有效提升身体机能。</li>
+</ol>
+<ol start="5">
+<li>无谓的纠结和生活中的各种诱惑，会极大消耗人的精力。高手总是极度自律、秩序井然，这样能避免在选择和诱惑上耗能。</li>
+</ol>
+<ol start="6">
+<li>合理安排压力，确保每次学习或者工作都是在稍微高出自己当前能力的水平上。一旦开始，就全神贯注。</li>
+</ol>
+<ol start="7">
+<li>适时户外散步。活动肢体可以增加给大脑的供血量，同时给大脑提供一个恰到好处的“打扰”。就算不正式散步，每隔一个小时站起来走几步，也是很好的休息。</li>
+</ol>
+<ol start="8">
+<li>回到大自然中去，置身花草树木、山川河流都可以休息。甚至看大自然图片，也能对大脑产生明显的效果。把电脑桌面换成自然风景也有用。 </li>
+</ol>
+<ol start="9">
+<li>跟朋友聚会，聊聊天、喝点酒。必须是朋友，是为了友情，而不是为了什么“人脉”。 </li>
+</ol>
+<ol start="10">
+<li>好的休假就像充电，可以让人在后面很长一段时间有充沛精力。休假的时候，要完全抛开工作。除了散步、回归自然、跟朋友聚会，还可以听音乐、洗澡，但是打游戏、半夜刷手机这些消耗注意力的活动，统统不行。 </li>
+</ol>
+<ol start="11">
+<li>学会冥想。找个不受打扰的时间，舒服地坐在一个安静的地方；深呼吸，体会肚子随着呼吸起起伏伏。意识始终只想呼吸，但不用刻意回避脑子里冒出来的想法，承认它，然后把它放走。从每天1分钟开始，逐渐增加时间。</li>
+</ol>
+<ol start="12">
+<li>睡眠非常重要，它的作用不仅仅是消除疲劳，更重要的是让身体和大脑“成长”。睡眠要规律，以每晚7-9个小时为宜，具体长短因人而异，以不用闹钟、自然醒为最好。</li>
+</ol>
+<ol start="13">
+<li>为了保证良好睡眠，晚上最好不要从事剧烈的脑力劳动。睡前不要使用手机、电脑或者iPad等电子产品。不要指望用打盹代替睡眠，打盹的作用仅限于恢复能量和注意力，且时间不要超过30分钟。</li>
+</ol>
+<ol start="14">
+<li>有谁能想到，在今天这个世界里想要做出一点成绩，居然连呼吸都得练呢？一切出发点，都因为你想做个不一样的人。</li>
+</ol>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <a class="newer-posts" href="/2018/09/11/2018.9.11/">
+        前の記事<br>2018.9.11
+    </a>
+    
+    <span class="page-number"></span>
+    
+    <a class="older-posts" href="/2018/07/26/2018.7.26 工作需要仪式感/">
+        次の記事<br>2018.7.26 工作需要仪式感
+    </a>
+    
+</nav>
+
+    
+            
+
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a><br>
+    &copy; 2020 <a href="http://wuoscar.github.io">吴思乱想</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?3726040"></script>
+
+
+
+</body>
+</html>
